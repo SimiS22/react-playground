@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import './Clock.scss'
+import React from 'react';
+import './Clock.scss';
 
 const tick = () => {
     const now = new Date();

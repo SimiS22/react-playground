@@ -1,7 +1,6 @@
 import React from 'react'
-import { useRouteMatch, Switch, Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import DrumKit from './DrumKit/DrumKit'
-import { NAV_ROUTES } from '../../routes'
 
 const KeyboardEvents: React.FC = () => {
 
