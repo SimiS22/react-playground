@@ -4,5 +4,11 @@ export const NAV_ROUTES = [
         examples: [
             { title: 'Drum kit', path: '/drum-kit' }
         ]
-    }
+    },
+    {
+        category: 'Animation', route: '/animation',
+        examples: [
+            { title: 'Clock', path: '/clock' }
+        ]
+    },
 ]
