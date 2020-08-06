@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+// import * as functions from 'firebase-functions';
 import * as express from 'express';
 import * as cors from 'cors';
 
@@ -14,6 +14,16 @@ app.get('/', (req, res) => {
   res.send({ hallo: 'hello' });
 });
 
+const movies = ['avengers', 'thor', 'iron-man'];
+
+app.get('/movies', async (req, res) => {
+  res.send({
+    movies: movies.filter((m) =>
+      m.toLocaleLowerCase().includes(req.query.search?.toString().toLocaleLowerCase() || '')
+    ),
+  });
+});
+
 app.listen(4000);
 
-export const api = functions.https.onRequest(app);
+// export const api = functions.https.onRequest(app);
