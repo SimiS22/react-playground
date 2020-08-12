@@ -1,5 +1,8 @@
 export const NAV_ROUTES = [
     {
+        category: 'LifeCycle', route: '/lifecycle',
+    },
+    {
         category: 'Login', route: '/login',
     },
     {

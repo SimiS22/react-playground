@@ -1,12 +1,12 @@
 import React from 'react';
 import './Clock.scss';
 
-const tick = () => {
-    const now = new Date();
-    const seconds = now.getSeconds();
-    const minutes = now.getMinutes();
-    const secondDegrees = ((seconds / 60) * 360);
-}
+// const tick = () => {
+//     const now = new Date();
+//     const seconds = now.getSeconds();
+//     const minutes = now.getMinutes();
+//     const secondDegrees = ((seconds / 60) * 360);
+// }
 
 const Clock: React.FC = () => {
 
