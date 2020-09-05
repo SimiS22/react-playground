@@ -1,16 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test test 1: final state 1`] = `
-<div>
-  <div
-    data-testid="myDiv"
-  >
-    final value
-  </div>
-  <button
-    data-testid="myButton"
-  >
-    Change
-  </button>
+exports[`test test 1: myDiv 1`] = `
+<div
+  data-testid="myDiv"
+>
+  final value
 </div>
 `;

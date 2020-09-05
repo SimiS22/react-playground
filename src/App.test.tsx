@@ -13,8 +13,6 @@ describe('test', () => {
 
     fireEvent.click(myButton);
 
-    expect(myDiv).toHaveTextContent('final value');
-
-    expect(rendered.container).toMatchSnapshot('final state')
+    expect(myDiv).toMatchSnapshot('myDiv');
   });
 });
