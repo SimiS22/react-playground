@@ -24,4 +24,7 @@ export const NAV_ROUTES = [
             { title: 'Likes Counter', path: '/like-counter' }
         ]
     },
+    {
+        category: 'ConditionalRendering', route: '/conditional-rendering',
+    },
 ]

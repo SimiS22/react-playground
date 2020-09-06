@@ -6,6 +6,7 @@ import Login from '../Login/Login';
 import './Content.scss';
 import LifeCycle from '../LifeCycle/LifeCycle';
 import Hooks from '../Hooks/Hooks'
+import ConditionalRendering from '../ConditionalRendering/ConditionalRendering';
 
 const Content: React.FC = () => {
   return (
@@ -25,6 +26,9 @@ const Content: React.FC = () => {
         </Route>
         <Route path="/hooks">
           <Hooks />
+        </Route>
+        <Route path="/conditional-rendering">
+          <ConditionalRendering />
         </Route>
       </Switch>
     </div>
