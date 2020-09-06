@@ -5,6 +5,7 @@ import Animation from '../Animation/Animation';
 import Login from '../Login/Login';
 import './Content.scss';
 import LifeCycle from '../LifeCycle/LifeCycle';
+import Hooks from '../Hooks/Hooks'
 
 const Content: React.FC = () => {
   return (
@@ -21,6 +22,9 @@ const Content: React.FC = () => {
         </Route>
         <Route path="/lifecycle">
           <LifeCycle age={30} />
+        </Route>
+        <Route path="/hooks">
+          <Hooks />
         </Route>
       </Switch>
     </div>

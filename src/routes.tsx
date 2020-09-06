@@ -17,4 +17,11 @@ export const NAV_ROUTES = [
             { title: 'Clock', path: '/clock' }
         ]
     },
+    {
+        category: 'Hooks', route: '/hooks',
+        examples: [
+            { title: 'Counter', path: '/counter' },
+            { title: 'Likes Counter', path: '/like-counter' }
+        ]
+    },
 ]
