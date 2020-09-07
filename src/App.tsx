@@ -9,21 +9,12 @@ export const TestApp: React.FC = () => {
   return (
     <>
       <div data-testid="myDiv">{text}</div>
-      <button data-testid="myButton" onClick={() => setText('final value')}>Change</button>
+      <button data-testid="myButton" onClick={() => setText('final value')}>
+        Change
+      </button>
     </>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
 
 const App: React.FC = () => {
   return (

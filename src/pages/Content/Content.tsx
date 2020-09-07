@@ -5,7 +5,7 @@ import Animation from '../Animation/Animation';
 import Login from '../Login/Login';
 import './Content.scss';
 import LifeCycle from '../LifeCycle/LifeCycle';
-import Hooks from '../Hooks/Hooks'
+import Hooks from '../Hooks/Hooks';
 import ConditionalRendering from '../ConditionalRendering/ConditionalRendering';
 
 const Content: React.FC = () => {
