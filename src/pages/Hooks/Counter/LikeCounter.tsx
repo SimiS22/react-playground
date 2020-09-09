@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
-import { AppState } from '../../../store';
+// import { AppState } from '../../../store';
 
 interface likeStatus {
   clicked: boolean;
@@ -9,21 +9,24 @@ interface likeStatus {
 
 const Like = styled.div`
   display: flex;
-  padding: '100px';
-  width: '100%';
+  justify-content: center;
+  align-tems: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
 `;
 
 const LikeButton = styled.button<likeStatus>`
-  font-size: 1rem;
-  padding: 5px 10px;
+  font-size: 40px;
+  padding: 0px 40px;
   color: ${(props) => (props.clicked ? 'blue' : 'black')};
 `;
 
-const LikeCounter: React.FC= () => {
+const LikeCounter: React.FC = () => {
   const [liked, setLiked] = useState(false);
   const [numberOfLikes, setNumberofLikes] = useState(100);
 
-  const appName = useSelector((state: AppState) => state.appName);
+  // const appName = useSelector((state: AppState) => state.appName);
 
   const handleLikes = () => {
     if (!liked) {
@@ -37,15 +40,11 @@ const LikeCounter: React.FC= () => {
 
   return (
     <Like>
-      <div>
-        <LikeButton clicked={liked}>
-          <button onClick={handleLikes}>
-            {`Like | `}
-            <span>{numberOfLikes}</span>
-          </button>
-        </LikeButton>
-        <h1>{appName}</h1>
-      </div>
+      <LikeButton clicked={liked} onClick={handleLikes}>
+        {`Like | `}
+        <span>{numberOfLikes}</span>
+      </LikeButton>
+      {/* <h1>{appName}</h1> */}
     </Like>
   );
 };
