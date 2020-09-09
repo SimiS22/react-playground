@@ -21,20 +21,20 @@ const ButtonWrapper = styled.div`
 `
 const Button = styled.div`
     display: flex;
-    width : 30%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width : 30%;
     font-size: 40px;
     font-weight:800;
     height: 60px;
     margin :40px;
+    position: relative;
     box-shadow: 0px 0px 20px 0px #e2e2e2;
     border-radius: 16px;
 `
 
 const Counter: React.FC = () => {
     const [count, setCount] = useState(0);
-    const [color, setColor] = useState('')
     const handlePlusClick = () => {
         setCount(count + 1);
     }

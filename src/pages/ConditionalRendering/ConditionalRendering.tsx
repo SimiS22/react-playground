@@ -1,7 +1,17 @@
 import React, { useState } from 'react'
 import Greeting from '../../components/Greeting/Greeting'
-import LoginButton from '../../components/Button/LoginButtton';
-import LogoutButton from '../../components/Button/LogOutButton'
+import Login from '../../components/Button/Login';
+
+import styled from 'styled-components';
+
+const DivWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 60px;
+`
 
 const ConditionalRendering: React.FC = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -12,13 +22,13 @@ const ConditionalRendering: React.FC = () => {
     const handleOnClickLogout = () => {
         setIsLoggedIn(false);
     }
-    const button = isLoggedIn ? <LoginButton onClick={handleOnClickLogin} /> :
-        <LogoutButton onClick={handleOnClickLogout} />
+    const button = !isLoggedIn ? <Login onClick={handleOnClickLogin} /> :
+        <Login onClick={handleOnClickLogout} />
     return (
-        <div>
+        <DivWrapper>
             <Greeting isLoggedIn={isLoggedIn} />
             {button}
-        </div>
+        </DivWrapper>
     )
 }
 export default ConditionalRendering
