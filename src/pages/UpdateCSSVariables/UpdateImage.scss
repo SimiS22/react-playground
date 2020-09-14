@@ -1,0 +1,17 @@
+$base: "black";
+$spacing: 10px;
+$blur: 10px;
+
+.imageUpdation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .controls {
+        margin: 40px;
+    }
+    img {
+        width: 40%;
+    }
+}

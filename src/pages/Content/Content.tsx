@@ -7,6 +7,7 @@ import './Content.scss';
 import LifeCycle from '../LifeCycle/LifeCycle';
 import Hooks from '../Hooks/Hooks';
 import ConditionalRendering from '../ConditionalRendering/ConditionalRendering';
+import UpdateImage from '../UpdateCSSVariables/UpdateImage';
 
 const Content: React.FC = () => {
   return (
@@ -29,6 +30,9 @@ const Content: React.FC = () => {
         </Route>
         <Route path="/conditional-rendering">
           <ConditionalRendering />
+        </Route>
+        <Route path="/update-image">
+          <UpdateImage />
         </Route>
       </Switch>
     </div>

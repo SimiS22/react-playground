@@ -9,11 +9,12 @@ export const NAV_ROUTES = [
         category: 'Hooks', route: '/hooks',
         examples: [
             { title: 'Counter', path: '/counter' },
-            { title: 'Likes Counter', path: '/like-counter' }
+            { title: 'Likes Counter', path: '/like-counter' },
+            { title: 'Calender', path: '/calender' }
         ]
     },
     {
-        category: 'ConditionalRendering', route: '/conditional-rendering',
+        category: 'Conditional Rendering', route: '/conditional-rendering',
     },
     {
         category: 'LifeCycle', route: '/lifecycle',
@@ -21,6 +22,9 @@ export const NAV_ROUTES = [
     // {
     //     category: 'Login', route: '/login',
     // },
+    {
+        category: 'Update Image', route: '/update-image',
+    },
     {
         category: 'Keyboard Events', route: '/keyboard-events',
         examples: [

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Clock.scss'
+import { monthsArray, daysArray } from '../../../data'
 
 const Clock: React.FC = () => {
-    const monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    const daysArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     const [currentDate, setCurrentDate] = useState(new Date());
 
     useEffect(() => {
@@ -40,7 +39,7 @@ const Clock: React.FC = () => {
     const dates = (inputDate: Date) => {
         const day = daysArray[inputDate.getDay() - 1];
         const date = inputDate.getDate();
-        const month = monthsArray[inputDate.getMonth()];
+        const month = monthsArray[inputDate.getMonth()].month;
         const year = inputDate.getFullYear();
 
         return `${date} ${month}, ${year} (${day})`
