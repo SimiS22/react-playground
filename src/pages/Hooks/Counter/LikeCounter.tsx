@@ -3,20 +3,20 @@ import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 // import { AppState } from '../../../store';
 
-interface likeStatus {
+interface LikeStatus {
   clicked: boolean;
 }
 
 const Like = styled.div`
   display: flex;
   justify-content: center;
-  align-tems: center;
+  align-items: center;
   width: 100%;
   height: 100px;
   margin-top: 100px;
 `;
 
-const LikeButton = styled.button<likeStatus>`
+const LikeButton = styled.button<LikeStatus>`
   font-size: 40px;
   padding: 0px 40px;
   color: ${(props) => (props.clicked ? 'blue' : 'black')};
