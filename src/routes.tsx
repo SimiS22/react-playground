@@ -26,6 +26,12 @@ export const NAV_ROUTES = [
         category: 'Update Image', route: '/update-image',
     },
     {
+        category: 'Context API', route: '/contextAPI',
+        examples: [
+            { title: 'Theme Selector', path: '/theme-selector' }
+        ]
+    },
+    {
         category: 'Keyboard Events', route: '/keyboard-events',
         examples: [
             { title: 'Drum kit', path: '/drum-kit' }

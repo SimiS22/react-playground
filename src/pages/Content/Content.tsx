@@ -8,6 +8,7 @@ import LifeCycle from '../LifeCycle/LifeCycle';
 import Hooks from '../Hooks/Hooks';
 import ConditionalRendering from '../ConditionalRendering/ConditionalRendering';
 import UpdateImage from '../UpdateCSSVariables/UpdateImage';
+import ContextAPI from '../ContextAPI/ContextAPI'
 
 const Content: React.FC = () => {
   return (
@@ -33,6 +34,9 @@ const Content: React.FC = () => {
         </Route>
         <Route path="/update-image">
           <UpdateImage />
+        </Route>
+        <Route path="/contextAPI">
+          <ContextAPI />
         </Route>
       </Switch>
     </div>
