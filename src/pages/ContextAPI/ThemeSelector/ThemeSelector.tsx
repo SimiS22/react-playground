@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ThemeButton from '../../../components/Button/ThemeButton'
-import ThemeContext from '../../../Theme'
+import ThemeContext from '../../../contexts/Theme'
 
 const ThemeSelector: React.FC = () => {
     const [theme, setTheme] = useState('dark')

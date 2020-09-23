@@ -9,6 +9,7 @@ import Hooks from '../Hooks/Hooks';
 import ConditionalRendering from '../ConditionalRendering/ConditionalRendering';
 import UpdateImage from '../UpdateCSSVariables/UpdateImage';
 import ContextAPI from '../ContextAPI/ContextAPI'
+import Forms from '../Forms/Forms';
 
 const Content: React.FC = () => {
   return (
@@ -37,6 +38,9 @@ const Content: React.FC = () => {
         </Route>
         <Route path="/contextAPI">
           <ContextAPI />
+        </Route>
+        <Route path="/forms">
+          <Forms />
         </Route>
       </Switch>
     </div>

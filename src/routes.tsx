@@ -28,13 +28,20 @@ export const NAV_ROUTES = [
     {
         category: 'Context API', route: '/contextAPI',
         examples: [
-            { title: 'Theme Selector', path: '/theme-selector' }
+            { title: 'Theme Selector', path: '/theme-selector' },
+            { title: 'Weather Checker', path: '/weather-checker' }
         ]
     },
     {
         category: 'Keyboard Events', route: '/keyboard-events',
         examples: [
             { title: 'Drum kit', path: '/drum-kit' }
+        ]
+    },
+    {
+        category: 'Forms', route: '/forms',
+        examples: [
+            { title: 'RangeChecker', path: '/range-checker' }
         ]
     },
 

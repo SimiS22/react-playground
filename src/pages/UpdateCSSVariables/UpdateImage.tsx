@@ -18,7 +18,7 @@ const UpdateImage: React.FC = () => {
                 <label>Color:</label>
                 <input type='color' name='base' value='black'></input>
             </div>
-            <img src={image} />
+            <img src={image} alt='' />
         </div>
     )
 }

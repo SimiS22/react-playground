@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemeContext from '../../Theme'
+import ThemeContext from '../../contexts/Theme'
 import styled from 'styled-components'
 
 const ButtonWrapper = styled.button`

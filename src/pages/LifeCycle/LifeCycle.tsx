@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Button, Input } from 'antd';
 import { useMoviesSearch } from './useMoviesSearch';
@@ -64,7 +64,7 @@ const LifeCycle: React.FC<{ age: number }> = (props) => {
   // }, []);
 
   const { handleFetch, movies, search, setSearch } = useMoviesSearch();
-  
+
   return (
     <Container>
       <Input onChange={(event) => setSearch(event.target.value)} />
