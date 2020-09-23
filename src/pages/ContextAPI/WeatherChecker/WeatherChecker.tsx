@@ -8,7 +8,7 @@ const WeatherChecker: React.FC = () => {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-            "x-rapidapi-key": "ff9721b437msh5ce506ab0c5feebp17e139jsn029484223138"
+            "x-rapidapi-key": ""
         }
     })
         .then((response) => {
