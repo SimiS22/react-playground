@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Input from '../../../components/Input/Input'
 import ProgressBar from '../../../components/ProgressBar/ProgressBar'
 import styled from 'styled-components'
-import PopUp from '../../../components/PopUp/PopUp'
 
 const RangeCheckerWrapper = styled.div`
     display: flex;
@@ -14,9 +13,9 @@ const RangeCheckerWrapper = styled.div`
 `
 
 const RangeChecker: React.FC = () => {
-    const [value, setValue] = useState<number>(0)
-    const [maxValue, setMaxValue] = useState<number>(0)
-    const [minValue, setMinValue] = useState<number>(0)
+    const [value, setValue] = useState<number | string>('')
+    const [maxValue, setMaxValue] = useState<number | string>('')
+    const [minValue, setMinValue] = useState<number | string>('')
 
     const handleOnChangeMax = (event: React.ChangeEvent<HTMLInputElement>) => {
         setMaxValue(Number(event.target.value))
@@ -32,15 +31,16 @@ const RangeChecker: React.FC = () => {
         { inputType: 'number', placeholder: 'Enter the maximum value', label: 'Maximum Value', value: maxValue, onChange: handleOnChangeMax },
         { inputType: 'number', placeholder: 'Enter the value here', label: 'Enter the value', value: value, onChange: handleOnChangeValue }
     ]
-    if (value > maxValue || value < minValue) {
-        return (
-            <PopUp />
-        )
-    }
-    let range = maxValue - minValue;
-    let startValue = value - minValue;
-    let percentage = (startValue / range) * 100;
 
+    let percentage;
+    if (value === '') {
+        percentage = 0;
+    }
+    else {
+        let range = (maxValue as number) - (minValue as number);
+        let startValue = (value as number) - (minValue as number);
+        percentage = (startValue / range) * 100;
+    }
     return (
         <RangeCheckerWrapper>
             {inputs.map((inputItem, index) => {
